@@ -1,0 +1,125 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "capi.ocean-insights.com",
+  "basePath" : "/containertracking/v2",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "subscriptions" : {
+      "get" : {
+        "tags" : [ "newp44_id" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "newp44_id",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/newp44_id"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "newp44_id" : {
+      "properties" : {
+        "contractual_eta_dlv" : {
+          "type" : "string"
+        },
+        "contractual_eta_pod" : {
+          "type" : "string"
+        },
+        "contractual_etd_pol" : {
+          "type" : "string"
+        },
+        "created" : {
+          "type" : "string"
+        },
+        "descriptive_name" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "last_actuals_update" : {
+          "type" : "string"
+        },
+        "last_carrier_update" : {
+          "type" : "string"
+        },
+        "modified" : {
+          "type" : "string"
+        },
+        "on_hold" : {
+          "type" : "boolean"
+        },
+        "owner_internal_id" : {
+          "type" : "string"
+        },
+        "request_carrier_name" : {
+          "type" : "string"
+        },
+        "request_key" : {
+          "type" : "string"
+        },
+        "request_type" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "status_verbose" : {
+          "type" : "string"
+        },
+        "suspicious_key" : {
+          "type" : "boolean"
+        },
+        "master_shipment_id" : {
+          "type" : "string"
+        },
+        "master_shipment_leg_id" : {
+          "type" : "string"
+        },
+        "account_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "account_name" : {
+          "type" : "string"
+        },
+        "tags" : {
+          "type" : "string"
+        },
+        "internal_tags" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string"
+        },
+        "containershipments" : {
+          "type" : "string"
+        },
+        "subscription_status_page_url" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
