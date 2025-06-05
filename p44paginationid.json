@@ -1,0 +1,895 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "capi.ocean-insights.com",
+  "basePath" : "/containertracking/v2",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "subscriptions" : {
+      "get" : {
+        "tags" : [ "p44paginationid" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "p44paginationid",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "Page",
+          "in" : "query",
+          "description" : null,
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "status",
+          "in" : "query",
+          "description" : null,
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/p44paginationid"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "p44paginationid##containershipments##leg1_vessel" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "imo" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "id" : {
+          "type" : "number",
+          "format" : "int32"
+        }
+      }
+    },
+    "p44paginationid##containershipments##dlv_loc" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        },
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "country_iso2" : {
+          "type" : "string"
+        },
+        "country_iso3" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid##containershipments##pod_loc" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        },
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "country_iso2" : {
+          "type" : "string"
+        },
+        "country_iso3" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid##containershipments##pol_loc" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        },
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "country_iso2" : {
+          "type" : "string"
+        },
+        "country_iso3" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid##containershipments##empty_pickup_loc" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        },
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "country_iso2" : {
+          "type" : "string"
+        },
+        "country_iso3" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid##containershipments##lif_loc" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        },
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "country_iso2" : {
+          "type" : "string"
+        },
+        "country_iso3" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid##containershipments##empty_return_loc" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        },
+        "latitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "longitude" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "country_iso2" : {
+          "type" : "string"
+        },
+        "country_iso3" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid##containershipments##identifiers" : {
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "reference_number" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid##containershipments" : {
+      "properties" : {
+        "id" : {
+          "type" : "number"
+        },
+        "shipmentsubscription_status" : {
+          "type" : "number"
+        },
+        "status_verbose" : {
+          "type" : "string"
+        },
+        "current_vessel_nextport" : {
+          "type" : "string"
+        },
+        "current_vessel_position" : {
+          "type" : "string"
+        },
+        "current_vessel" : {
+          "type" : "string"
+        },
+        "container_type_iso" : {
+          "type" : "string"
+        },
+        "container_type_str" : {
+          "type" : "string"
+        },
+        "shipmentsubscription_status_verbose" : {
+          "type" : "string"
+        },
+        "shipmentsubscription_on_hold" : {
+          "type" : "boolean"
+        },
+        "shipmentsubscription_id" : {
+          "type" : "number"
+        },
+        "lifecycle_status_verbose" : {
+          "type" : "string"
+        },
+        "tsp4_loc" : {
+          "type" : "string"
+        },
+        "tsp3_loc" : {
+          "type" : "string"
+        },
+        "tsp2_loc" : {
+          "type" : "string"
+        },
+        "tsp1_loc" : {
+          "type" : "string"
+        },
+        "leg5_vessel" : {
+          "type" : "string"
+        },
+        "leg4_vessel" : {
+          "type" : "string"
+        },
+        "leg3_vessel" : {
+          "type" : "string"
+        },
+        "leg2_vessel" : {
+          "type" : "string"
+        },
+        "leg1_vessel" : {
+          "$ref" : "#/definitions/p44paginationid##containershipments##leg1_vessel"
+        },
+        "dlv_loc" : {
+          "$ref" : "#/definitions/p44paginationid##containershipments##dlv_loc"
+        },
+        "pod_loc" : {
+          "$ref" : "#/definitions/p44paginationid##containershipments##pod_loc"
+        },
+        "pol_loc" : {
+          "$ref" : "#/definitions/p44paginationid##containershipments##pol_loc"
+        },
+        "origin_loc" : {
+          "type" : "string"
+        },
+        "carrier_name" : {
+          "type" : "string"
+        },
+        "carrier_scac" : {
+          "type" : "string"
+        },
+        "container_number" : {
+          "type" : "string"
+        },
+        "descriptive_name" : {
+          "type" : "string"
+        },
+        "shipmentsubscription_descriptive_name" : {
+          "type" : "string"
+        },
+        "shipmentsubscription_tags" : {
+          "type" : "string"
+        },
+        "transport_modes_verbose" : {
+          "type" : "string"
+        },
+        "transport_modes" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string"
+        },
+        "shipmentsubscription" : {
+          "type" : "string"
+        },
+        "tags" : {
+          "type" : "string"
+        },
+        "tsp1_vslarrival_prediction" : {
+          "type" : "string"
+        },
+        "tsp2_vslarrival_prediction" : {
+          "type" : "string"
+        },
+        "tsp3_vslarrival_prediction" : {
+          "type" : "string"
+        },
+        "tsp4_vslarrival_prediction" : {
+          "type" : "string"
+        },
+        "pod_vslarrival_prediction" : {
+          "type" : "string"
+        },
+        "pod_discharge_prediction" : {
+          "type" : "string"
+        },
+        "leg1_service" : {
+          "type" : "string"
+        },
+        "leg2_service" : {
+          "type" : "string"
+        },
+        "leg3_service" : {
+          "type" : "string"
+        },
+        "leg4_service" : {
+          "type" : "string"
+        },
+        "leg5_service" : {
+          "type" : "string"
+        },
+        "pod_timeofarrival_warning" : {
+          "type" : "string"
+        },
+        "empty_pickup_loc" : {
+          "$ref" : "#/definitions/p44paginationid##containershipments##empty_pickup_loc"
+        },
+        "availability_loc" : {
+          "type" : "string"
+        },
+        "lif_loc" : {
+          "$ref" : "#/definitions/p44paginationid##containershipments##lif_loc"
+        },
+        "empty_return_loc" : {
+          "$ref" : "#/definitions/p44paginationid##containershipments##empty_return_loc"
+        },
+        "incidents" : {
+          "type" : "string"
+        },
+        "identifiers" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/p44paginationid##containershipments##identifiers"
+          }
+        },
+        "booking_number" : {
+          "type" : "string"
+        },
+        "bl_number" : {
+          "type" : "string"
+        },
+        "weight" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "number"
+        },
+        "lifecycle_status" : {
+          "type" : "number"
+        },
+        "id_date" : {
+          "type" : "string"
+        },
+        "empty_pickup_planned_initial" : {
+          "type" : "string"
+        },
+        "empty_pickup_planned_last" : {
+          "type" : "string"
+        },
+        "empty_pickup_actual" : {
+          "type" : "string"
+        },
+        "origin_pickup_planned_initial" : {
+          "type" : "string"
+        },
+        "origin_pickup_planned_last" : {
+          "type" : "string"
+        },
+        "origin_pickup_actual" : {
+          "type" : "string"
+        },
+        "pol_arrival_planned_initial" : {
+          "type" : "string"
+        },
+        "pol_arrival_planned_last" : {
+          "type" : "string"
+        },
+        "pol_arrival_actual" : {
+          "type" : "string"
+        },
+        "pol_loaded_planned_initial" : {
+          "type" : "string"
+        },
+        "pol_loaded_planned_last" : {
+          "type" : "string"
+        },
+        "pol_loaded_actual" : {
+          "type" : "string"
+        },
+        "pol_vsldeparture_planned_initial" : {
+          "type" : "string"
+        },
+        "pol_vsldeparture_planned_last" : {
+          "type" : "string"
+        },
+        "pol_vsldeparture_actual" : {
+          "type" : "string"
+        },
+        "pol_vsldeparture_detected" : {
+          "type" : "string"
+        },
+        "leg1_voyage" : {
+          "type" : "string"
+        },
+        "tsp1_vslarrival_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp1_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp1_vslarrival_actual" : {
+          "type" : "string"
+        },
+        "tsp1_vslarrival_detected" : {
+          "type" : "string"
+        },
+        "tsp1_discharge_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp1_discharge_planned_last" : {
+          "type" : "string"
+        },
+        "tsp1_discharge_actual" : {
+          "type" : "string"
+        },
+        "tsp1_loaded_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp1_loaded_planned_last" : {
+          "type" : "string"
+        },
+        "tsp1_loaded_actual" : {
+          "type" : "string"
+        },
+        "tsp1_vsldeparture_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp1_vsldeparture_planned_last" : {
+          "type" : "string"
+        },
+        "tsp1_vsldeparture_actual" : {
+          "type" : "string"
+        },
+        "tsp1_vsldeparture_detected" : {
+          "type" : "string"
+        },
+        "leg2_voyage" : {
+          "type" : "string"
+        },
+        "tsp2_vslarrival_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp2_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp2_vslarrival_actual" : {
+          "type" : "string"
+        },
+        "tsp2_vslarrival_detected" : {
+          "type" : "string"
+        },
+        "tsp2_discharge_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp2_discharge_planned_last" : {
+          "type" : "string"
+        },
+        "tsp2_discharge_actual" : {
+          "type" : "string"
+        },
+        "tsp2_loaded_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp2_loaded_planned_last" : {
+          "type" : "string"
+        },
+        "tsp2_loaded_actual" : {
+          "type" : "string"
+        },
+        "tsp2_vsldeparture_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp2_vsldeparture_planned_last" : {
+          "type" : "string"
+        },
+        "tsp2_vsldeparture_actual" : {
+          "type" : "string"
+        },
+        "tsp2_vsldeparture_detected" : {
+          "type" : "string"
+        },
+        "leg3_voyage" : {
+          "type" : "string"
+        },
+        "tsp3_vslarrival_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp3_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp3_vslarrival_actual" : {
+          "type" : "string"
+        },
+        "tsp3_vslarrival_detected" : {
+          "type" : "string"
+        },
+        "tsp3_discharge_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp3_discharge_planned_last" : {
+          "type" : "string"
+        },
+        "tsp3_discharge_actual" : {
+          "type" : "string"
+        },
+        "tsp3_loaded_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp3_loaded_planned_last" : {
+          "type" : "string"
+        },
+        "tsp3_loaded_actual" : {
+          "type" : "string"
+        },
+        "tsp3_vsldeparture_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp3_vsldeparture_planned_last" : {
+          "type" : "string"
+        },
+        "tsp3_vsldeparture_actual" : {
+          "type" : "string"
+        },
+        "tsp3_vsldeparture_detected" : {
+          "type" : "string"
+        },
+        "leg4_voyage" : {
+          "type" : "string"
+        },
+        "tsp4_vslarrival_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp4_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp4_vslarrival_actual" : {
+          "type" : "string"
+        },
+        "tsp4_vslarrival_detected" : {
+          "type" : "string"
+        },
+        "tsp4_discharge_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp4_discharge_planned_last" : {
+          "type" : "string"
+        },
+        "tsp4_discharge_actual" : {
+          "type" : "string"
+        },
+        "tsp4_loaded_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp4_loaded_planned_last" : {
+          "type" : "string"
+        },
+        "tsp4_loaded_actual" : {
+          "type" : "string"
+        },
+        "tsp4_vsldeparture_planned_initial" : {
+          "type" : "string"
+        },
+        "tsp4_vsldeparture_planned_last" : {
+          "type" : "string"
+        },
+        "tsp4_vsldeparture_actual" : {
+          "type" : "string"
+        },
+        "tsp4_vsldeparture_detected" : {
+          "type" : "string"
+        },
+        "leg5_voyage" : {
+          "type" : "string"
+        },
+        "pod_vslarrival_planned_initial" : {
+          "type" : "string"
+        },
+        "pod_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "pod_vslarrival_actual" : {
+          "type" : "string"
+        },
+        "pod_vslarrival_detected" : {
+          "type" : "string"
+        },
+        "pod_discharge_planned_initial" : {
+          "type" : "string"
+        },
+        "pod_discharge_planned_last" : {
+          "type" : "string"
+        },
+        "pod_discharge_actual" : {
+          "type" : "string"
+        },
+        "pod_departure_planned_initial" : {
+          "type" : "string"
+        },
+        "pod_departure_planned_last" : {
+          "type" : "string"
+        },
+        "pod_departure_actual" : {
+          "type" : "string"
+        },
+        "lif_arrival_planned_initial" : {
+          "type" : "string"
+        },
+        "lif_arrival_planned_last" : {
+          "type" : "string"
+        },
+        "lif_arrival_actual" : {
+          "type" : "string"
+        },
+        "lif_departure_planned_initial" : {
+          "type" : "string"
+        },
+        "lif_departure_planned_last" : {
+          "type" : "string"
+        },
+        "lif_departure_actual" : {
+          "type" : "string"
+        },
+        "dlv_delivery_planned_initial" : {
+          "type" : "string"
+        },
+        "dlv_delivery_planned_last" : {
+          "type" : "string"
+        },
+        "dlv_delivery_actual" : {
+          "type" : "string"
+        },
+        "empty_return_planned_initial" : {
+          "type" : "string"
+        },
+        "empty_return_planned_last" : {
+          "type" : "string"
+        },
+        "empty_return_actual" : {
+          "type" : "string"
+        },
+        "empty_return_customer" : {
+          "type" : "string"
+        },
+        "ts_count" : {
+          "type" : "number"
+        },
+        "customs_release_state" : {
+          "type" : "string"
+        },
+        "customs_release_date" : {
+          "type" : "string"
+        },
+        "carrier_release_state" : {
+          "type" : "string"
+        },
+        "carrier_release_date" : {
+          "type" : "string"
+        },
+        "availability_date" : {
+          "type" : "string"
+        },
+        "created" : {
+          "type" : "string"
+        },
+        "modified" : {
+          "type" : "string"
+        },
+        "shipment_status_page_url" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44paginationid" : {
+      "properties" : {
+        "contractual_eta_dlv" : {
+          "type" : "string"
+        },
+        "contractual_eta_pod" : {
+          "type" : "string"
+        },
+        "contractual_etd_pol" : {
+          "type" : "string"
+        },
+        "created" : {
+          "type" : "string"
+        },
+        "descriptive_name" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "last_actuals_update" : {
+          "type" : "string"
+        },
+        "last_carrier_update" : {
+          "type" : "string"
+        },
+        "modified" : {
+          "type" : "string"
+        },
+        "on_hold" : {
+          "type" : "boolean"
+        },
+        "owner_internal_id" : {
+          "type" : "string"
+        },
+        "request_carrier_name" : {
+          "type" : "string"
+        },
+        "request_key" : {
+          "type" : "string"
+        },
+        "request_type" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "status_verbose" : {
+          "type" : "string"
+        },
+        "suspicious_key" : {
+          "type" : "boolean"
+        },
+        "master_shipment_id" : {
+          "type" : "string"
+        },
+        "master_shipment_leg_id" : {
+          "type" : "string"
+        },
+        "account_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "account_name" : {
+          "type" : "string"
+        },
+        "tags" : {
+          "type" : "string"
+        },
+        "internal_tags" : {
+          "type" : "string"
+        },
+        "url" : {
+          "type" : "string"
+        },
+        "containershipments" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/p44paginationid##containershipments"
+          }
+        },
+        "subscription_status_page_url" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
