@@ -9,7 +9,7 @@
     "license" : null
   },
   "host" : "capi.ocean-insights.com",
-  "basePath" : "/containertracking/v2/capi.ocean-insights.com/containertracking/v2",
+  "basePath" : "/containertracking/v2",
   "schemes" : [ "https" ],
   "paths" : {
     "subscriptions" : {
@@ -20,15 +20,26 @@
         "operationId" : "subscriptions",
         "produces" : [ "application/json" ],
         "consumes" : [ "application/json" ],
-        "parameters" : [ ],
+        "parameters" : [ {
+          "name" : "page",
+          "in" : "query",
+          "description" : null,
+          "required" : false,
+          "type" : "number",
+          "format" : "int32"
+        }, {
+          "name" : "status",
+          "in" : "query",
+          "description" : null,
+          "required" : false,
+          "type" : "number",
+          "format" : "int32"
+        } ],
         "responses" : {
           "200" : {
             "description" : "successful operation",
             "schema" : {
-              "type" : "array",
-              "items" : {
-                "$ref" : "#/definitions/subscriptions"
-              }
+              "$ref" : "#/definitions/subscriptions"
             }
           }
         }
