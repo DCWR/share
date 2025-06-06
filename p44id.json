@@ -37,10 +37,7 @@
           "200" : {
             "description" : "successful operation",
             "schema" : {
-              "type" : "array",
-              "items" : {
-                "$ref" : "#/definitions/p44id"
-              }
+              "$ref" : "#/definitions/p44id"
             }
           }
         }
@@ -48,126 +45,29 @@
     }
   },
   "definitions" : {
-    "p44id##containershipments##leg1_vessel" : {
+    "p44id##containershipments##shipmentsubscription_tags" : {
       "properties" : {
-        "name" : {
-          "type" : "string"
-        },
-        "imo" : {
-          "type" : "number",
-          "format" : "int32"
-        },
         "id" : {
-          "type" : "number",
-          "format" : "int32"
+          "type" : "number"
+        },
+        "value" : {
+          "type" : "string"
+        },
+        "is_access_control" : {
+          "type" : "boolean"
         }
       }
     },
-    "p44id##containershipments##pod_loc" : {
+    "p44id##containershipments##tags" : {
       "properties" : {
-        "name" : {
+        "id" : {
+          "type" : "number"
+        },
+        "value" : {
           "type" : "string"
         },
-        "locode" : {
-          "type" : "string"
-        },
-        "timezone" : {
-          "type" : "string"
-        },
-        "latitude" : {
-          "type" : "number",
-          "format" : "double"
-        },
-        "longitude" : {
-          "type" : "number",
-          "format" : "double"
-        },
-        "city" : {
-          "type" : "string"
-        },
-        "state" : {
-          "type" : "string"
-        },
-        "country" : {
-          "type" : "string"
-        },
-        "country_iso2" : {
-          "type" : "string"
-        },
-        "country_iso3" : {
-          "type" : "string"
-        }
-      }
-    },
-    "p44id##containershipments##pol_loc" : {
-      "properties" : {
-        "name" : {
-          "type" : "string"
-        },
-        "locode" : {
-          "type" : "string"
-        },
-        "timezone" : {
-          "type" : "string"
-        },
-        "latitude" : {
-          "type" : "number",
-          "format" : "double"
-        },
-        "longitude" : {
-          "type" : "number",
-          "format" : "double"
-        },
-        "city" : {
-          "type" : "string"
-        },
-        "state" : {
-          "type" : "string"
-        },
-        "country" : {
-          "type" : "string"
-        },
-        "country_iso2" : {
-          "type" : "string"
-        },
-        "country_iso3" : {
-          "type" : "string"
-        }
-      }
-    },
-    "p44id##containershipments##lif_loc" : {
-      "properties" : {
-        "name" : {
-          "type" : "string"
-        },
-        "locode" : {
-          "type" : "string"
-        },
-        "timezone" : {
-          "type" : "string"
-        },
-        "latitude" : {
-          "type" : "number",
-          "format" : "double"
-        },
-        "longitude" : {
-          "type" : "number",
-          "format" : "double"
-        },
-        "city" : {
-          "type" : "string"
-        },
-        "state" : {
-          "type" : "string"
-        },
-        "country" : {
-          "type" : "string"
-        },
-        "country_iso2" : {
-          "type" : "string"
-        },
-        "country_iso3" : {
-          "type" : "string"
+        "is_access_control" : {
+          "type" : "boolean"
         }
       }
     },
@@ -181,31 +81,189 @@
         }
       }
     },
+    "p44id##containershipments##origin_loc" : {
+      "properties" : {
+        "locode" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##pol_loc" : {
+      "properties" : {
+        "locode" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "timezone" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##leg1_vessel" : {
+      "properties" : {
+        "id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "imo" : {
+          "type" : "number",
+          "format" : "int32"
+        }
+      }
+    },
+    "p44id##containershipments##leg1_service" : {
+      "properties" : {
+        "id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "code" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "direction" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##pod_loc" : {
+      "properties" : {
+        "timezone" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##pod_vslarrival_prediction" : {
+      "properties" : {
+        "created" : {
+          "type" : "string"
+        },
+        "predicted" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##pod_discharge_prediction" : {
+      "properties" : {
+        "created" : {
+          "type" : "string"
+        },
+        "predicted" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##dlv_loc" : {
+      "properties" : {
+        "timezone" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "Country" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##availability_loc" : {
+      "properties" : {
+        "timezone" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##empty_return_loc" : {
+      "properties" : {
+        "timezone" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "locode" : {
+          "type" : "string"
+        }
+      }
+    },
+    "p44id##containershipments##pod_timeofarrival_warning" : {
+      "properties" : {
+        "risk" : {
+          "type" : "string"
+        },
+        "risk_description" : {
+          "type" : "string"
+        },
+        "conclusion" : {
+          "type" : "string"
+        },
+        "predicted_time_of_arrival" : {
+          "type" : "string"
+        },
+        "created" : {
+          "type" : "string"
+        },
+        "modified" : {
+          "type" : "string"
+        }
+      }
+    },
     "p44id##containershipments" : {
       "properties" : {
         "id" : {
           "type" : "number"
         },
-        "shipmentsubscription_status" : {
+        "url" : {
+          "type" : "string"
+        },
+        "status" : {
           "type" : "number"
         },
         "status_verbose" : {
           "type" : "string"
         },
-        "current_vessel_nextport" : {
+        "shipmentsubscription" : {
           "type" : "string"
         },
-        "current_vessel_position" : {
-          "type" : "string"
+        "shipmentsubscription_id" : {
+          "type" : "number"
         },
-        "current_vessel" : {
-          "type" : "string"
-        },
-        "container_type_iso" : {
-          "type" : "string"
-        },
-        "container_type_str" : {
-          "type" : "string"
+        "shipmentsubscription_status" : {
+          "type" : "number"
         },
         "shipmentsubscription_status_verbose" : {
           "type" : "string"
@@ -213,50 +271,14 @@
         "shipmentsubscription_on_hold" : {
           "type" : "boolean"
         },
-        "shipmentsubscription_id" : {
-          "type" : "number"
-        },
-        "lifecycle_status_verbose" : {
+        "shipmentsubscription_descriptive_name" : {
           "type" : "string"
         },
-        "tsp4_loc" : {
-          "type" : "string"
-        },
-        "tsp3_loc" : {
-          "type" : "string"
-        },
-        "tsp2_loc" : {
-          "type" : "string"
-        },
-        "tsp1_loc" : {
-          "type" : "string"
-        },
-        "leg5_vessel" : {
-          "type" : "string"
-        },
-        "leg4_vessel" : {
-          "type" : "string"
-        },
-        "leg3_vessel" : {
-          "type" : "string"
-        },
-        "leg2_vessel" : {
-          "type" : "string"
-        },
-        "leg1_vessel" : {
-          "$ref" : "#/definitions/p44id##containershipments##leg1_vessel"
-        },
-        "dlv_loc" : {
-          "type" : "string"
-        },
-        "pod_loc" : {
-          "$ref" : "#/definitions/p44id##containershipments##pod_loc"
-        },
-        "pol_loc" : {
-          "$ref" : "#/definitions/p44id##containershipments##pol_loc"
-        },
-        "origin_loc" : {
-          "type" : "string"
+        "shipmentsubscription_tags" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/p44id##containershipments##shipmentsubscription_tags"
+          }
         },
         "carrier_name" : {
           "type" : "string"
@@ -267,87 +289,6 @@
         "container_number" : {
           "type" : "string"
         },
-        "descriptive_name" : {
-          "type" : "string"
-        },
-        "shipmentsubscription_descriptive_name" : {
-          "type" : "string"
-        },
-        "shipmentsubscription_tags" : {
-          "type" : "string"
-        },
-        "transport_modes_verbose" : {
-          "type" : "string"
-        },
-        "transport_modes" : {
-          "type" : "string"
-        },
-        "url" : {
-          "type" : "string"
-        },
-        "shipmentsubscription" : {
-          "type" : "string"
-        },
-        "tags" : {
-          "type" : "string"
-        },
-        "tsp1_vslarrival_prediction" : {
-          "type" : "string"
-        },
-        "tsp2_vslarrival_prediction" : {
-          "type" : "string"
-        },
-        "tsp3_vslarrival_prediction" : {
-          "type" : "string"
-        },
-        "tsp4_vslarrival_prediction" : {
-          "type" : "string"
-        },
-        "pod_vslarrival_prediction" : {
-          "type" : "string"
-        },
-        "pod_discharge_prediction" : {
-          "type" : "string"
-        },
-        "leg1_service" : {
-          "type" : "string"
-        },
-        "leg2_service" : {
-          "type" : "string"
-        },
-        "leg3_service" : {
-          "type" : "string"
-        },
-        "leg4_service" : {
-          "type" : "string"
-        },
-        "leg5_service" : {
-          "type" : "string"
-        },
-        "pod_timeofarrival_warning" : {
-          "type" : "string"
-        },
-        "empty_pickup_loc" : {
-          "type" : "string"
-        },
-        "availability_loc" : {
-          "type" : "string"
-        },
-        "lif_loc" : {
-          "$ref" : "#/definitions/p44id##containershipments##lif_loc"
-        },
-        "empty_return_loc" : {
-          "type" : "string"
-        },
-        "incidents" : {
-          "type" : "string"
-        },
-        "identifiers" : {
-          "type" : "array",
-          "items" : {
-            "$ref" : "#/definitions/p44id##containershipments##identifiers"
-          }
-        },
         "booking_number" : {
           "type" : "string"
         },
@@ -357,13 +298,61 @@
         "weight" : {
           "type" : "string"
         },
-        "status" : {
+        "container_type_str" : {
+          "type" : "string"
+        },
+        "container_type_iso" : {
+          "type" : "string"
+        },
+        "ts_count" : {
           "type" : "number"
         },
         "lifecycle_status" : {
           "type" : "number"
         },
-        "id_date" : {
+        "lifecycle_status_verbose" : {
+          "type" : "string"
+        },
+        "created" : {
+          "type" : "string"
+        },
+        "current_vessel" : {
+          "type" : "string"
+        },
+        "current_vessel_position" : {
+          "type" : "string"
+        },
+        "current_vessel_nextport" : {
+          "type" : "string"
+        },
+        "modified" : {
+          "type" : "string"
+        },
+        "descriptive_name" : {
+          "type" : "string"
+        },
+        "tags" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/p44id##containershipments##tags"
+          }
+        },
+        "shipment_status_page_url" : {
+          "type" : "string"
+        },
+        "incidents" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "identifiers" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/p44id##containershipments##identifiers"
+          }
+        },
+        "empty_pickup_loc" : {
           "type" : "string"
         },
         "empty_pickup_planned_initial" : {
@@ -375,6 +364,9 @@
         "empty_pickup_actual" : {
           "type" : "string"
         },
+        "origin_loc" : {
+          "$ref" : "#/definitions/p44id##containershipments##origin_loc"
+        },
         "origin_pickup_planned_initial" : {
           "type" : "string"
         },
@@ -383,6 +375,9 @@
         },
         "origin_pickup_actual" : {
           "type" : "string"
+        },
+        "pol_loc" : {
+          "$ref" : "#/definitions/p44id##containershipments##pol_loc"
         },
         "pol_arrival_planned_initial" : {
           "type" : "string"
@@ -414,13 +409,25 @@
         "pol_vsldeparture_detected" : {
           "type" : "string"
         },
+        "leg1_vessel" : {
+          "$ref" : "#/definitions/p44id##containershipments##leg1_vessel"
+        },
         "leg1_voyage" : {
+          "type" : "string"
+        },
+        "leg1_service" : {
+          "$ref" : "#/definitions/p44id##containershipments##leg1_service"
+        },
+        "tsp1_loc" : {
           "type" : "string"
         },
         "tsp1_vslarrival_planned_initial" : {
           "type" : "string"
         },
         "tsp1_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp1_vslarrival_prediction" : {
           "type" : "string"
         },
         "tsp1_vslarrival_actual" : {
@@ -459,13 +466,25 @@
         "tsp1_vsldeparture_detected" : {
           "type" : "string"
         },
+        "leg2_vessel" : {
+          "type" : "string"
+        },
         "leg2_voyage" : {
+          "type" : "string"
+        },
+        "leg2_service" : {
+          "type" : "string"
+        },
+        "tsp2_loc" : {
           "type" : "string"
         },
         "tsp2_vslarrival_planned_initial" : {
           "type" : "string"
         },
         "tsp2_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp2_vslarrival_prediction" : {
           "type" : "string"
         },
         "tsp2_vslarrival_actual" : {
@@ -504,13 +523,25 @@
         "tsp2_vsldeparture_detected" : {
           "type" : "string"
         },
+        "leg3_vessel" : {
+          "type" : "string"
+        },
         "leg3_voyage" : {
+          "type" : "string"
+        },
+        "leg3_service" : {
+          "type" : "string"
+        },
+        "tsp3_loc" : {
           "type" : "string"
         },
         "tsp3_vslarrival_planned_initial" : {
           "type" : "string"
         },
         "tsp3_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp3_vslarrival_prediction" : {
           "type" : "string"
         },
         "tsp3_vslarrival_actual" : {
@@ -549,13 +580,25 @@
         "tsp3_vsldeparture_detected" : {
           "type" : "string"
         },
+        "leg4_vessel" : {
+          "type" : "string"
+        },
         "leg4_voyage" : {
+          "type" : "string"
+        },
+        "leg4_service" : {
+          "type" : "string"
+        },
+        "tsp4_loc" : {
           "type" : "string"
         },
         "tsp4_vslarrival_planned_initial" : {
           "type" : "string"
         },
         "tsp4_vslarrival_planned_last" : {
+          "type" : "string"
+        },
+        "tsp4_vslarrival_prediction" : {
           "type" : "string"
         },
         "tsp4_vslarrival_actual" : {
@@ -594,14 +637,26 @@
         "tsp4_vsldeparture_detected" : {
           "type" : "string"
         },
+        "leg5_vessel" : {
+          "type" : "string"
+        },
         "leg5_voyage" : {
           "type" : "string"
+        },
+        "leg5_service" : {
+          "type" : "string"
+        },
+        "pod_loc" : {
+          "$ref" : "#/definitions/p44id##containershipments##pod_loc"
         },
         "pod_vslarrival_planned_initial" : {
           "type" : "string"
         },
         "pod_vslarrival_planned_last" : {
           "type" : "string"
+        },
+        "pod_vslarrival_prediction" : {
+          "$ref" : "#/definitions/p44id##containershipments##pod_vslarrival_prediction"
         },
         "pod_vslarrival_actual" : {
           "type" : "string"
@@ -615,6 +670,9 @@
         "pod_discharge_planned_last" : {
           "type" : "string"
         },
+        "pod_discharge_prediction" : {
+          "$ref" : "#/definitions/p44id##containershipments##pod_discharge_prediction"
+        },
         "pod_discharge_actual" : {
           "type" : "string"
         },
@@ -625,6 +683,9 @@
           "type" : "string"
         },
         "pod_departure_actual" : {
+          "type" : "string"
+        },
+        "lif_loc" : {
           "type" : "string"
         },
         "lif_arrival_planned_initial" : {
@@ -645,6 +706,9 @@
         "lif_departure_actual" : {
           "type" : "string"
         },
+        "dlv_loc" : {
+          "$ref" : "#/definitions/p44id##containershipments##dlv_loc"
+        },
         "dlv_delivery_planned_initial" : {
           "type" : "string"
         },
@@ -653,6 +717,27 @@
         },
         "dlv_delivery_actual" : {
           "type" : "string"
+        },
+        "customs_release_state" : {
+          "type" : "boolean"
+        },
+        "customs_release_date" : {
+          "type" : "string"
+        },
+        "carrier_release_state" : {
+          "type" : "boolean"
+        },
+        "carrier_release_date" : {
+          "type" : "string"
+        },
+        "availability_loc" : {
+          "$ref" : "#/definitions/p44id##containershipments##availability_loc"
+        },
+        "availability_date" : {
+          "type" : "string"
+        },
+        "empty_return_loc" : {
+          "$ref" : "#/definitions/p44id##containershipments##empty_return_loc"
         },
         "empty_return_planned_initial" : {
           "type" : "string"
@@ -663,81 +748,56 @@
         "empty_return_actual" : {
           "type" : "string"
         },
-        "empty_return_customer" : {
-          "type" : "string"
+        "pod_timeofarrival_warning" : {
+          "$ref" : "#/definitions/p44id##containershipments##pod_timeofarrival_warning"
         },
-        "ts_count" : {
+        "transport_modes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "number",
+            "format" : "int32"
+          }
+        },
+        "transport_modes_verbose" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "p44id##tags" : {
+      "properties" : {
+        "id" : {
           "type" : "number"
         },
-        "customs_release_state" : {
+        "value" : {
           "type" : "string"
         },
-        "customs_release_date" : {
-          "type" : "string"
-        },
-        "carrier_release_state" : {
-          "type" : "string"
-        },
-        "carrier_release_date" : {
-          "type" : "string"
-        },
-        "availability_date" : {
-          "type" : "string"
-        },
-        "created" : {
-          "type" : "string"
-        },
-        "modified" : {
-          "type" : "string"
-        },
-        "shipment_status_page_url" : {
-          "type" : "string"
+        "is_access_control" : {
+          "type" : "boolean"
         }
       }
     },
     "p44id" : {
       "properties" : {
-        "contractual_eta_dlv" : {
-          "type" : "string"
-        },
-        "contractual_eta_pod" : {
-          "type" : "string"
-        },
-        "contractual_etd_pol" : {
-          "type" : "string"
-        },
-        "created" : {
-          "type" : "string"
-        },
-        "descriptive_name" : {
-          "type" : "string"
-        },
         "id" : {
           "type" : "number",
           "format" : "int32"
         },
-        "last_actuals_update" : {
-          "type" : "string"
-        },
-        "last_carrier_update" : {
-          "type" : "string"
-        },
-        "modified" : {
-          "type" : "string"
-        },
-        "on_hold" : {
-          "type" : "boolean"
-        },
-        "owner_internal_id" : {
-          "type" : "string"
-        },
         "request_carrier_name" : {
+          "type" : "string"
+        },
+        "request_type" : {
           "type" : "string"
         },
         "request_key" : {
           "type" : "string"
         },
-        "request_type" : {
+        "suspicious_key" : {
+          "type" : "boolean"
+        },
+        "url" : {
           "type" : "string"
         },
         "status" : {
@@ -747,13 +807,31 @@
         "status_verbose" : {
           "type" : "string"
         },
-        "suspicious_key" : {
-          "type" : "boolean"
+        "containershipments" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/p44id##containershipments"
+          }
+        },
+        "created" : {
+          "type" : "string"
+        },
+        "last_carrier_update" : {
+          "type" : "string"
+        },
+        "last_actuals_update" : {
+          "type" : "string"
         },
         "master_shipment_id" : {
           "type" : "string"
         },
         "master_shipment_leg_id" : {
+          "type" : "string"
+        },
+        "modified" : {
+          "type" : "string"
+        },
+        "descriptive_name" : {
           "type" : "string"
         },
         "account_id" : {
@@ -763,20 +841,27 @@
         "account_name" : {
           "type" : "string"
         },
+        "on_hold" : {
+          "type" : "boolean"
+        },
         "tags" : {
-          "type" : "string"
-        },
-        "internal_tags" : {
-          "type" : "string"
-        },
-        "url" : {
-          "type" : "string"
-        },
-        "containershipments" : {
           "type" : "array",
           "items" : {
-            "$ref" : "#/definitions/p44id##containershipments"
+            "$ref" : "#/definitions/p44id##tags"
           }
+        },
+        "owner_internal_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "contractual_etd_pol" : {
+          "type" : "string"
+        },
+        "contractual_eta_pod" : {
+          "type" : "string"
+        },
+        "contractual_eta_dlv" : {
+          "type" : "string"
         },
         "subscription_status_page_url" : {
           "type" : "string"
